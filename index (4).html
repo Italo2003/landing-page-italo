@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ítalo Santos - Desenvolvedor Front-end e Suporte</title>
+<style>
+  /* Reset básico */
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    animation: fadeIn 1s ease-in forwards;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .container {
+    max-width: 520px;
+    width: 100%;
+    background: #142d4c;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    padding: 40px 30px;
+    text-align: center;
+    animation: slideUp 1s ease forwards;
+  }
+
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  h1 {
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+    color: #f0f4f8;
+  }
+
+  h2 {
+    font-weight: 400;
+    color: #88b0f0;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+  .section-title {
+    color: #a8c0ff;
+    margin: 30px 0 15px 0;
+    border-bottom: 2px solid #3e6ccf;
+    padding-bottom: 6px;
+    font-size: 1.3rem;
+  }
+
+  .tech-list, .projects-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .tech-list li, .projects-list li {
+    background: #224880;
+    margin-bottom: 10px;
+    padding: 12px 15px;
+    border-radius: 10px;
+    text-align: left;
+    transition: background-color 0.3s ease;
+    cursor: default;
+  }
+
+  .tech-list li:hover, .projects-list li:hover {
+    background-color: #3e6ccf;
+  }
+
+  .projects-list a {
+    color: #a8c0ff;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .projects-list a:hover {
+    text-decoration: underline;
+  }
+
+  .contact-info {
+    margin-top: 25px;
+    font-size: 1rem;
+    color: #a8c0ff;
+  }
+
+  .contact-info a {
+    color: #a8c0ff;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+
+  .btn-whatsapp {
+    display: inline-block;
+    background-color: #25d366;
+    color: #142d4c;
+    padding: 15px 35px;
+    margin-top: 30px;
+    border-radius: 40px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-decoration: none;
+    box-shadow: 0 6px 15px rgba(37, 211, 102, 0.4);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  .btn-whatsapp:hover {
+    background-color: #1ebe5c;
+    transform: scale(1.05);
+  }
+
+  @media (max-width: 480px) {
+    .container {
+      padding: 30px 20px;
+      max-width: 95%;
+    }
+    h1 {
+      font-size: 1.8rem;
+    }
+    .btn-whatsapp {
+      width: 100%;
+      padding: 15px 0;
+      font-size: 1.1rem;
+    }
+  }
+</style>
+</head>
+<body>
+  <main class="container" role="main">
+    <h1>Ítalo Santos</h1>
+    <h2>Desenvolvedor Front-end e Suporte</h2>
+
+    <section aria-labelledby="services-title">
+      <h3 id="services-title" class="section-title">Tecnologias</h3>
+      <ul class="tech-list" aria-label="Tecnologias que utilizo">
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>HTML5</li>
+        <li>CSS3</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="projects-title">
+      <h3 id="projects-title" class="section-title">Projetos</h3>
+      <ul class="projects-list" aria-label="Projetos desenvolvidos">
+        <li>
+          <strong>Fernanda-site:</strong>  
+          <a href="https://github.com/Italo2003/fernanda-site" target="_blank" rel="noopener noreferrer">
+            Repositório GitHub
+          </a>
+        </li>
+        <li>
+          <strong>Restaurante:</strong>  
+          <a href="https://github.com/Italo2003/Restaurante" target="_blank" rel="noopener noreferrer">
+            Repositório GitHub
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="contact-title">
+      <h3 id="contact-title" class="section-title">Contato</h3>
+      <p class="contact-info">
+        Email: <a href="mailto:Italosantos57053@gmail.com">Italosantos57053@gmail.com</a><br />
+        LinkedIn: <a href="https://www.linkedin.com/in/%C3%ADtalo-santos-269b242a4/" target="_blank" rel="noopener noreferrer">/ítalo-santos</a><br />
+        WhatsApp: <a href="https://wa.me/5581989544196" target="_blank" rel="noopener noreferrer">(81) 98954-4196</a>
+      </p>
+    </section>
+
+    <a href="https://wa.me/5581989544196" class="btn-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Agendar contato pelo WhatsApp">
+      Agendar contato pelo WhatsApp
+    </a>
+  </main>
+</body>
+</html>
